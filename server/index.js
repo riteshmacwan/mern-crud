@@ -26,7 +26,7 @@ app.get("/date", function (req, res) {
 
 app.use("/", crudRoutes);
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5000;
 connection(process.env.MONGO_URI)
   .then(() => {
     console.log("Mongo connection successful!");
